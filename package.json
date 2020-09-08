@@ -1,6 +1,6 @@
 {
   "name": "@wolfenden/serverless-bundler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Michael Wolfenden",
   "license": "MIT",
   "engines": {
