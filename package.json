@@ -35,9 +35,6 @@
     "type": "git",
     "url": "https://github.com/michael-wolfenden/serverless-bundler.git"
   },
-  "publishConfig": {
-    "access": "restricted"
-  },
   "devDependencies": {
     "@jedmao/semantic-release-npm-github-config": "1.0.9",
     "semantic-release": "17.1.1"
