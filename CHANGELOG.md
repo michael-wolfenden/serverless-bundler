@@ -10,7 +10,7 @@ All notable changes to this project will be documented in this file. See
 
 * Trun webpack symlinks off and hide all output stats ([73b0177](https://github.com/michael-wolfenden/serverless-bundler/commit/73b017760f481ddcdc983017a56b64fbfa5f5236))
 
-# 1.0.0 (2020-09-08)
+## 1.0.0 (2020-09-08)
 
 
 ### Features
