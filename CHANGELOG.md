@@ -1,0 +1,11 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 1.0.0 (2020-09-08)
+
+
+### Features
+
+* Initial commit 🎉 ([cefa4e2](https://github.com/michael-wolfenden/serverless-bundler/commit/cefa4e2b4f7c314cec2ed4f5039c63db872067ad))
