@@ -7,11 +7,10 @@ module.exports = {
   target: 'node',
   mode: isLocal ? 'development' : 'production',
   devtool: isLocal ? 'cheap-module-eval-source-map' : 'source-map',
-  stats: {
-    modules: false,
-    colors: {
-      green: '\u001b[32m',
-    },
+  stats: 'errors-only',
+  resolve: {
+    // for performance
+    symlinks: false,
   },
   module: {
     rules: [
