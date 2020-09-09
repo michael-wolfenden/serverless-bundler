@@ -12,10 +12,10 @@ All notable changes to this project will be documented in this file. See
 
 ## [1.0.2](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.0.1...v1.0.2) (2020-09-09)
 
-
 ### Bug Fixes
 
-* Update prettier to use LF instead of CRLF ([96435f9](https://github.com/michael-wolfenden/serverless-bundler/commit/96435f92eb0b86782553511a481d9561c06248a7))
+- Update prettier to use LF instead of CRLF
+  ([96435f9](https://github.com/michael-wolfenden/serverless-bundler/commit/96435f92eb0b86782553511a481d9561c06248a7))
 
 ## [1.0.1](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.0.0...v1.0.1) (2020-09-08)
 
