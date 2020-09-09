@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.0.3...v1.0.4) (2020-09-09)
+
+
+### Bug Fixes
+
+* Normalise files to LF ([3c29ac0](https://github.com/michael-wolfenden/serverless-bundler/commit/3c29ac08aa8051f60173a4b6043aaa17fa5d1c24))
+
 ## [1.0.3](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.0.2...v1.0.3) (2020-09-09)
 
 
