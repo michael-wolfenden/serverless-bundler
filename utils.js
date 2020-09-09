@@ -3,13 +3,13 @@ const path = require('path')
 const yargs = require('yargs-parser')
 const readPkgUp = require('read-pkg-up')
 
-const { packageJson: pkg, path: pkgPath } = readPkgUp.sync({
+const {packageJson: pkg, path: pkgPath} = readPkgUp.sync({
   cwd: fs.realpathSync(process.cwd()),
 })
 
 const appDirectory = path.dirname(pkgPath)
 
-const getProvidedFilePaths = (args) => {
+const getProvidedFilePaths = args => {
   const parsedArgs = yargs(args)
   return parsedArgs._
 }
@@ -24,7 +24,7 @@ const resolveScripts = () => {
   })
 }
 
-const relativePathTo = (currentDirectory) => (relativeFilePath) => {
+const relativePathTo = currentDirectory => relativeFilePath => {
   const absolutePath = path.join(currentDirectory, relativeFilePath)
   const rootDirectory = process.cwd()
 
@@ -33,7 +33,7 @@ const relativePathTo = (currentDirectory) => (relativeFilePath) => {
 
 const resolveBin = (
   modName,
-  { executable = modName, cwd = process.cwd() } = {},
+  {executable = modName, cwd = process.cwd()} = {},
 ) => {
   let pathFromWhich
   try {
@@ -45,7 +45,7 @@ const resolveBin = (
   try {
     const modPkgPath = require.resolve(`${modName}/package.json`)
     const modPkgDir = path.dirname(modPkgPath)
-    const { bin } = require(modPkgPath)
+    const {bin} = require(modPkgPath)
     const binPath = typeof bin === 'string' ? bin : bin[executable]
     const fullPathToBin = path.join(modPkgDir, binPath)
     if (fullPathToBin === pathFromWhich) {

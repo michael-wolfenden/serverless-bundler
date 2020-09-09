@@ -29,7 +29,8 @@
     "yargs-parser": "^19.0.4"
   },
   "scripts": {
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "format": "node ./bin/scripts format"
   },
   "repository": {
     "type": "git",

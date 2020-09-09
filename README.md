@@ -1,11 +1,15 @@
 # @wolfenden/serverless-bundler [![Build Status](https://github.com/michael-wolfenden/serverless-bundler/workflows/npm-publish/badge.svg)](https://github.com/michael-wolfenden/serverless-bundler/actions) [![npm](https://img.shields.io/npm/v/@wolfenden/serverless-bundler.svg)](https://www.npmjs.com/package/@wolfenden/serverless-bundler)
 
-@wolfenden/serverless-bundler is a combination of a 
-[Serverless Framework](https://www.serverless.com) plugin as well as a CLI that abstracts away all the packages and configuration for my serverless projects.
+@wolfenden/serverless-bundler is a combination of a
+[Serverless Framework](https://www.serverless.com) plugin as well as a CLI that
+abstracts away all the packages and configuration for my serverless projects.
 
-Its basically a combination of [serverless-bundle](https://github.com/AnomalyInnovations/serverless-bundle) and [kcd-scripts](https://github.com/kentcdodds/kcd-scripts).
+Its basically a combination of
+[serverless-bundle](https://github.com/AnomalyInnovations/serverless-bundle) and
+[kcd-scripts](https://github.com/kentcdodds/kcd-scripts).
 
-It allows you to replace the following packages as well as their associated configurations with a single reference
+It allows you to replace the following packages as well as their associated
+configurations with a single reference
 
 ```diff
 - "eslint"
@@ -22,7 +26,8 @@ It allows you to replace the following packages as well as their associated conf
 + "@wolfenden/serverless-bundler"
 ```
 
-This is heavily opinionated and is based on my preferred defaults. This project is mainly to show an example of how you could do this yourself.
+This is heavily opinionated and is based on my preferred defaults. This project
+is mainly to show an example of how you could do this yourself.
 
 ---
 
@@ -45,7 +50,8 @@ package:
   individually: true
 ```
 
-Your lambda functions will now be bundled using the bundled webpack configuration
+Your lambda functions will now be bundled using the bundled webpack
+configuration
 
 The following scripts are also available
 
@@ -80,8 +86,13 @@ module.exports = require('@wolfenden/serverless-bundler/prettier')
 module.exports = require('@wolfenden/serverless-bundler/eslint')
 ```
 
-This will ensure that your editor respects the same configuration that `@wolfenden/serverless-bundler` is using when runngin `lint` and `format`
+This will ensure that your editor respects the same configuration that
+`@wolfenden/serverless-bundler` is using when runngin `lint` and `format`
 
 ## Thanks
 
-This plugin would not be possible without the amazing [serverless-webpack](https://github.com/serverless-heaven/serverless-webpack) plugin and the ideas and code from [serverless-bundle](https://github.com/AnomalyInnovations/serverless-bundle) and [kcd-scripts](https://github.com/kentcdodds/kcd-scripts).
+This plugin would not be possible without the amazing
+[serverless-webpack](https://github.com/serverless-heaven/serverless-webpack)
+plugin and the ideas and code from
+[serverless-bundle](https://github.com/AnomalyInnovations/serverless-bundle) and
+[kcd-scripts](https://github.com/kentcdodds/kcd-scripts).

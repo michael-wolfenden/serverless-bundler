@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const spawn = require('cross-spawn')
 
-process.on('unhandledRejection', (err) => {
+process.on('unhandledRejection', err => {
   throw err
 })
 

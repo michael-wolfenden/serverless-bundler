@@ -1,10 +1,10 @@
 const path = require('path')
 const args = process.argv.slice(2)
 const spawn = require('cross-spawn')
-const { resolveBin } = require('../utils')
+const {resolveBin} = require('../utils')
 
-const absolutePath = (file) => path.join(__dirname, file)
-const relativePathTo = (file) => absolutePath(file).replace(process.cwd(), '.')
+const absolutePath = file => path.join(__dirname, file)
+const relativePathTo = file => absolutePath(file).replace(process.cwd(), '.')
 
 const config = ['--config', relativePathTo('../config/lint-staged.config.js')]
 

@@ -25,7 +25,7 @@ class ServerlessPlugin extends ServerlessWebpack {
     this.options = options
 
     const {
-      custom: { webpack = null, serverless_bundler = {} } = {},
+      custom: {webpack = null, serverless_bundler = {}} = {},
     } = this.serverless.service
 
     this.hooks['before:webpack:validate:validate'] = function validate() {
