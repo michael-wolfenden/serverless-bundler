@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.0.2...v1.0.3) (2020-09-09)
+
+
+### Bug Fixes
+
+* Update prettier to use CRLF instead of LF ([6c07f70](https://github.com/michael-wolfenden/serverless-bundler/commit/6c07f70c8b56d6e7e86600abf905322b306133e5))
+
 ## [1.0.2](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.0.1...v1.0.2) (2020-09-09)
 
 
