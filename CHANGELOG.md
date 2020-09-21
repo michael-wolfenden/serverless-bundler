@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.0.5...v1.1.0) (2020-09-21)
+
+
+### Features
+
+* allow toggling webpack minification (defaults to true) ([4ea8c38](https://github.com/michael-wolfenden/serverless-bundler/commit/4ea8c38a3e9c35eb13619404bd1b48b5930d038a))
+* change jest setup path to `testing/setup-jest.js` ([8108042](https://github.com/michael-wolfenden/serverless-bundler/commit/81080423e0d6fcd955f10b4204ceaf3cc16be2da))
+
 ## [1.0.5](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.0.4...v1.0.5) (2020-09-14)
 
 
