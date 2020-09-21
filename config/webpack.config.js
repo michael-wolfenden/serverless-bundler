@@ -1,6 +1,7 @@
 const slsw = require('serverless-webpack')
 
 const {isLocal} = slsw.lib.webpack
+const {minimize = true} = slsw.lib.serverless.service.custom.webpack
 
 module.exports = {
   entry: slsw.lib.entries,
@@ -19,5 +20,8 @@ module.exports = {
         loader: require.resolve('html-loader'),
       },
     ],
+  },
+  optimization: {
+    minimize,
   },
 }
