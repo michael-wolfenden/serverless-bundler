@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.1.0...v1.2.0) (2020-09-28)
+
+
+### Features
+
+* add jest-partial ([08ca451](https://github.com/michael-wolfenden/serverless-bundler/commit/08ca451160fdc591a6f9db075e8263b5cbe7790d))
+
 # [1.1.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.0.5...v1.1.0) (2020-09-21)
 
 
