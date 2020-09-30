@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.2.0...v1.2.1) (2020-09-30)
+
+
+### Bug Fixes
+
+* testing/setup-jest.js -> src/testing/setup-jest.js ([f01f149](https://github.com/michael-wolfenden/serverless-bundler/commit/f01f149d923ba9fa8a1bb6d8929a0886163c67b4))
+
 # [1.2.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.1.0...v1.2.0) (2020-09-28)
 
 
