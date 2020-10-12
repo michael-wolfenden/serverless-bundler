@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "cross-spawn": "7.0.3",
-    "eslint": "7.10.0",
+    "eslint": "7.11.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-config-prettier": "6.12.0",
     "eslint-plugin-import": "2.22.1",
-    "jest": "26.4.2",
-    "jest-config": "26.4.2",
+    "jest": "26.5.3",
+    "jest-config": "26.5.3",
     "lint-staged": "10.4.0",
     "prettier": "2.1.2",
     "read-pkg-up": "7.0.1",
@@ -42,6 +42,6 @@
     "@semantic-release/github": "7.1.1",
     "@semantic-release/npm": "7.0.6",
     "@semantic-release/release-notes-generator": "9.0.1",
-    "semantic-release": "17.1.2"
+    "semantic-release": "17.2.0"
   }
 }
