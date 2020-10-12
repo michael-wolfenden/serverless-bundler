@@ -23,7 +23,7 @@
     "prettier": "2.1.2",
     "read-pkg-up": "7.0.1",
     "serverless-webpack": "5.3.5",
-    "webpack": "4.44.2",
+    "webpack": "5.0.0",
     "yargs": "16.0.3",
     "yargs-parser": "^20.2.1"
   },
