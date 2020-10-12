@@ -10,7 +10,7 @@ const getConfig = (servicePath, bundlerOptions) => {
   return {
     webpack: {
       packager: 'yarn',
-      excludeFiles: 'src/**/{index.yml,index.spec.js,index.html}',
+      excludeFiles: '**/{index.yml,index.spec.js}',
       webpackConfig: pathToWebpackConfig,
       ...bundlerOptions,
     },
