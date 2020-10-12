@@ -13,14 +13,6 @@ module.exports = {
     // for performance
     symlinks: false,
   },
-  module: {
-    rules: [
-      {
-        test: /\.html$/i,
-        loader: require.resolve('html-loader'),
-      },
-    ],
-  },
   optimization: {
     minimize,
   },
