@@ -15,6 +15,9 @@ module.exports = {
   },
   rules: {
     'no-console': 'off',
-    'no-restricted-syntax': 'off'
+    'no-restricted-syntax': 'off',
+    'no-param-reassign': 'off',
+    'global-require': 'off',
+    'import/no-dynamic-require': 'off',
   },
 }
