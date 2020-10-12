@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.2.1...v1.3.0) (2020-10-12)
+
+
+### Features
+
+* Remove annoying eslint rules ([cd44917](https://github.com/michael-wolfenden/serverless-bundler/commit/cd449174e37b047e048e79c3409568d434898bfc))
+* Remove html-loader ([60a2e00](https://github.com/michael-wolfenden/serverless-bundler/commit/60a2e003aafb5c6d6108fa322c0ea529272ea288))
+* Remove jest-partial ([bd7a36f](https://github.com/michael-wolfenden/serverless-bundler/commit/bd7a36f19da54d215c3b548f995d668b23bbfacd))
+* Upgrade all dependencies ([e2f40e6](https://github.com/michael-wolfenden/serverless-bundler/commit/e2f40e6cff8cf0a8a871812add0daa2a386655a5))
+* Upgrade to webpack 5 ([d7d682c](https://github.com/michael-wolfenden/serverless-bundler/commit/d7d682c47798eba51749a8d06108db612920760c))
+
 ## [1.2.1](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.2.0...v1.2.1) (2020-09-30)
 
 
