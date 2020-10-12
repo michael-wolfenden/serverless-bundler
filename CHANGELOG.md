@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.3.0...v1.3.1) (2020-10-12)
+
+
+### Bug Fixes
+
+* Remove src prefix to cater for functions not under /src ([2c6ebed](https://github.com/michael-wolfenden/serverless-bundler/commit/2c6ebed54c63148599ebbc363a223adcd646c339))
+
 # [1.3.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.2.1...v1.3.0) (2020-10-12)
 
 
