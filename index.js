@@ -13,6 +13,11 @@ const getConfig = (servicePath, bundlerOptions) => {
       excludeFiles: '**/{index.yml,index.spec.js}',
       webpackConfig: pathToWebpackConfig,
       ...bundlerOptions,
+      // if we are outputting stats, we probably want to
+      // keep the webpack folder so we can analyze them
+      ...(bundlerOptions.outputStats && {
+        keepOutputDirectory: true,
+      }),
     },
   }
 }
