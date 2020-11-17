@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.4.0...v2.0.0) (2020-11-17)
+
+
+### Features
+
+* allow changing jest options via your package.json ([ff797c0](https://github.com/michael-wolfenden/serverless-bundler/commit/ff797c066740849bfdcc14b5c4bc0d221e28194c))
+
+
+### BREAKING CHANGES
+
+* no longer auto detect globalSetup, globalTeardown or setupFilesAfterEnv
+
 # [1.4.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.3.1...v1.4.0) (2020-10-19)
 
 
