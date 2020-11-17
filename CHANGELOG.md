@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v2.1.0...v2.2.0) (2020-11-17)
+
+
+### Features
+
+* Upgrade all dependencies ([41caa5e](https://github.com/michael-wolfenden/serverless-bundler/commit/41caa5efaefaba649873106c8683c5e9d5533498))
+
 # [2.1.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v2.0.0...v2.1.0) (2020-11-17)
 
 
