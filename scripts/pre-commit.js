@@ -1,13 +1,9 @@
-const path = require('path')
 const args = process.argv.slice(2)
 const spawn = require('cross-spawn')
-const {resolveBin} = require('../utils')
+const { fromOwnRoot, resolveBin } = require('../utils')
 
-const absolutePath = file => path.join(__dirname, file)
-const relativePathTo = file => absolutePath(file).replace(process.cwd(), '.')
-
-const config = ['--config', relativePathTo('../config/lint-staged.config.js')]
-
+const config = ['--config', fromOwnRoot('./config/lint-staged.config.js')]
+console.log("config", resolveBin('lint-staged'))
 const result = spawn.sync(resolveBin('lint-staged'), [...config, ...args], {
   stdio: 'inherit',
 })

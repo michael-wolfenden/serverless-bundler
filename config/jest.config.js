@@ -1,25 +1,46 @@
 const {defaults} = require('jest-config')
-const {fromRoot, hasFile} = require('../utils')
-
-const getPathFromRoot = filename => {
-  const startingFromSrcPath = `src/testing/${filename}`
-  if (hasFile(startingFromSrcPath)) return fromRoot(startingFromSrcPath)
-
-  const startingFromTestingPath = `testing/${filename}`
-  if (hasFile(startingFromTestingPath)) return fromRoot(startingFromTestingPath)
-
-  return null
-}
+const {fromAppRoot, packageJson} = require('../utils')
 
 const config = {
   ...defaults,
-  roots: [fromRoot('.')],
+  rootDir: fromAppRoot('.'),
   testEnvironment: 'node',
-  globalSetup: getPathFromRoot('jest-global-setup.js'),
-  globalTeardown: getPathFromRoot('jest-global-teardown.js'),
-  setupFilesAfterEnv: [getPathFromRoot('jest-setup-files-after-env.js')].filter(
-    Boolean,
-  ),
+}
+
+const overrides = {...packageJson.jest}
+const supportedKeys = [
+  'collectCoverageFrom',
+  'coverageReporters',
+  'coverageThreshold',
+  'extraGlobals',
+  'globalSetup',
+  'globalTeardown',
+  'moduleNameMapper',
+  'reporters',
+  'resetMocks',
+  'resetModules',
+  'setupFilesAfterEnv',
+  'snapshotSerializers',
+  'testResultsProcessor',
+  'testSequencer',
+  'transform',
+  'transformIgnorePatterns',
+  'watchPathIgnorePatterns',
+]
+
+if (overrides) {
+  supportedKeys.forEach(key => {
+    // eslint-disable-next-line no-prototype-builtins
+    if (overrides.hasOwnProperty(key)) {
+      if (Array.isArray(config[key]) || typeof config[key] !== 'object') {
+        // for arrays or primitive types, directly override the config key
+        config[key] = overrides[key]
+      } else {
+        // for object types, extend gracefully
+        config[key] = {...config[key], ...overrides[key]}
+      }
+    }
+  })
 }
 
 module.exports = config

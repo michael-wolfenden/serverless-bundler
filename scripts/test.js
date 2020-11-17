@@ -1,10 +1,7 @@
-const path = require('path')
-let args = process.argv.slice(2)
+const args = process.argv.slice(2)
+const { fromOwnRoot } = require('../utils')
 
-const absolutePath = file => path.join(__dirname, file)
-const relativePathTo = file => absolutePath(file).replace(process.cwd(), '.')
-
-const config = ['--config', relativePathTo('../config/jest.config.js')]
+const config = ['--config', fromOwnRoot('./config/jest.config.js')]
 
 process.env.NODE_ENV = 'test'
 
