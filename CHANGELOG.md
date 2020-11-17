@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v2.0.0...v2.1.0) (2020-11-17)
+
+
+### Features
+
+* add the ability to output stats to analyze webpack chunks ([44a2421](https://github.com/michael-wolfenden/serverless-bundler/commit/44a2421d69d78505d5f320e85f5c3b56dea4dd4a))
+
 # [2.0.0](https://github.com/michael-wolfenden/serverless-bundler/compare/v1.4.0...v2.0.0) (2020-11-17)
 
 
